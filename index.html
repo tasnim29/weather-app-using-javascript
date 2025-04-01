@@ -20,7 +20,7 @@
   </head>
   <body>
     <section
-      class="w-4/12 mx-auto mt-16 bg-gradient-to-br from-[#00feba] to-[#5b548a] rounded-lg"
+      class="lg:w-4/12 w-10/12 mx-auto mt-16 bg-gradient-to-br from-[#00feba] to-[#5b548a] rounded-lg"
     >
       <div class="search flex items-center gap-4 justify-center pt-10">
         <input
@@ -30,7 +30,7 @@
           type="search"
           name=""
           id=""
-          placeholder="Enter City Nam"
+          placeholder="Enter City Name"
         />
         <button onclick="handleCity()" id="search-btn">
           <i
@@ -46,7 +46,7 @@
             alt=""
           />
           <h1
-            class="mt-5 text-3xl text-white italic font-semibold animate-bounce"
+            class="mt-5 lg:text-3xl text-xl text-white italic font-semibold animate-bounce"
           >
             Hey there..Wanna check the weather!!
           </h1>
@@ -56,19 +56,19 @@
         <h1 id="feels-like" class="text-xl text-white"></h1>
         <h1 id="city-name" class="text-4xl text-white"></h1>
       </div>
-      <div class="details flex justify-between px-10 pb-10">
+      <div class="details flex justify-between lg:px-10 px-5 pb-10">
         <div class="col flex items-center gap-3">
           <img class="w-10" src="images/humidity.png" alt="" />
           <div>
-            <h2 id="humidity" class="text-2xl text-white"></h2>
-            <h2 class="text-2xl text-white">Humidity</h2>
+            <h2 id="humidity" class="lg:text-2xl text-white"></h2>
+            <h2 class="lg:text-2xl text-white">Humidity</h2>
           </div>
         </div>
         <div class="col flex items-center gap-3">
           <img class="w-10" src="images/wind.png" alt="" />
           <div>
-            <h2 id="wind-speed" class="text-2xl text-white"></h2>
-            <h2 class="text-2xl text-white">Wind Speed</h2>
+            <h2 id="wind-speed" class="lg:text-2xl text-white"></h2>
+            <h2 class="lg:text-2xl text-white">Wind Speed</h2>
           </div>
         </div>
       </div>
