@@ -30,7 +30,7 @@
           type="search"
           name=""
           id=""
-          placeholder="Enter City Name"
+          placeholder="Enter City Nam"
         />
         <button onclick="handleCity()" id="search-btn">
           <i
@@ -39,23 +39,35 @@
         </button>
       </div>
       <div class="weather text-center mb-10">
-        <img class="w-40 mx-auto" src="images/rain.png" alt="" />
+        <div id="default-div">
+          <img
+            class="w-48 rounded-xl mt-10 mx-auto"
+            src="images/default.jpg"
+            alt=""
+          />
+          <h1
+            class="mt-5 text-3xl text-white italic font-semibold animate-bounce"
+          >
+            Hey there..Wanna check the weather!!
+          </h1>
+        </div>
+        <img id="weather-img" class="w-40 mt-10 mx-auto" src="" alt="" />
         <h1 id="temp" class="text-7xl text-white font-semibold"></h1>
         <h1 id="feels-like" class="text-xl text-white"></h1>
         <h1 id="city-name" class="text-4xl text-white"></h1>
       </div>
-      <div class="details flex justify-between px-10 py-12 mt-12">
+      <div class="details flex justify-between px-10 pb-10">
         <div class="col flex items-center gap-3">
           <img class="w-10" src="images/humidity.png" alt="" />
           <div>
-            <h2 id="humidity" class="text-2xl text-white">50%</h2>
+            <h2 id="humidity" class="text-2xl text-white"></h2>
             <h2 class="text-2xl text-white">Humidity</h2>
           </div>
         </div>
         <div class="col flex items-center gap-3">
           <img class="w-10" src="images/wind.png" alt="" />
           <div>
-            <h2 class="text-2xl text-white">15kmh/h</h2>
+            <h2 id="wind-speed" class="text-2xl text-white"></h2>
             <h2 class="text-2xl text-white">Wind Speed</h2>
           </div>
         </div>
