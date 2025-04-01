@@ -23,12 +23,12 @@
       class="lg:w-4/12 w-10/12 mx-auto mt-16 bg-gradient-to-br from-[#00feba] to-[#5b548a] rounded-lg"
     >
       <div
-        class="search flex flex-wrap items-center gap-4 justify-center pt-10"
+        class="search flex flex-wrap items-center gap-4 justify-center lg:pt-10 pt-5"
       >
         <input
           value=""
           id="search-bar"
-          class="px-10 py-3 rounded-xl bg-white border-none"
+          class="lg:px-10 px-3 py-3 rounded-xl bg-white border-none"
           type="search"
           name=""
           id=""
@@ -43,7 +43,7 @@
       <div class="weather text-center mb-10">
         <div id="default-div">
           <img
-            class="w-48 rounded-xl mt-10 mx-auto"
+            class="w-48 max-w-[80%] rounded-xl mt-10 mx-auto"
             src="images/default.jpg"
             alt=""
           />
@@ -54,11 +54,16 @@
           </h1>
         </div>
         <img id="weather-img" class="w-40 mt-10 mx-auto" src="" alt="" />
-        <h1 id="temp" class="text-7xl text-white font-semibold"></h1>
-        <h1 id="feels-like" class="text-xl text-white"></h1>
-        <h1 id="city-name" class="text-4xl text-white"></h1>
+        <h1
+          id="temp"
+          class="lg:text-7xl text-4xl text-white font-semibold"
+        ></h1>
+        <h1 id="feels-like" class="lg:text-xl text-lg text-white"></h1>
+        <h1 id="city-name" class="lg:text-4xl text-2xl text-white"></h1>
       </div>
-      <div class="details flex justify-between lg:px-10 px-5 pb-10">
+      <div
+        class="details flex flex-wrap justify-center gap-5 lg:justify-between lg:px-10 px-5 pb-10"
+      >
         <div class="col flex items-center gap-3">
           <img class="w-10" src="images/humidity.png" alt="" />
           <div>
